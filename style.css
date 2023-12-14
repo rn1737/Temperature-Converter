@@ -1,0 +1,99 @@
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    background-color: #e7eaee;   
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+}
+
+
+
+#resultContainer{
+    font-size: 10px;
+}
+
+form {
+    width: 150%;
+    height: 62%;
+    padding-top: 50px;
+    border-radius: 20px;
+    background-color: #35a2d4;
+    margin-top: 49px;
+    text-align:center;
+    box-shadow: -1px 1px 26px #bcb7b6; 
+    border: 5px solid rgba(0, 0, 0, 0);
+    transition: all 0.3s ease;
+}
+form:hover{
+    box-shadow: -1px 1px 26px green;
+}
+
+
+form .text-2{
+    color: #1c0707;
+}
+
+
+#tempCalc label {
+    font-size: 30px;
+}
+
+[type="submit"]{
+    height: 35px;
+    width:80%;
+    font-size: 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ff0055;
+    margin: 35px auto;
+}
+
+#resultContainer {
+    color: red;
+    padding: 8px 8px;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+[type="number"]{
+    width:80px;
+    height:26px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border-style:groove;
+    border-color: 2px solid black;
+
+}
+#temp_diff{
+    width: 90px;
+    height: 30px;
+    margin-bottom: 70px;
+    border-radius: 4px;
+    border-style: inset;
+    border-color: 5px black;
+}
+
+/* responsive styling */
+
+@media (max-width: 558px){
+    form{
+        width: 100%;
+        height: 60%;
+        padding: 7px 7px;
+    }
+    form #text-1{
+        font-size: 30px;
+    }
+}
